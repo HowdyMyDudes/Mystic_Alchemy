@@ -20,7 +20,7 @@ public class ItemElementalPistol extends ElementsMysticAlchemy.ModElement {
 	@GameRegistry.ObjectHolder("mysticalchemy:elementalpistol")
 	public static final Item block = null;
 	public ItemElementalPistol(ElementsMysticAlchemy instance) {
-		super(instance, 1);
+		super(instance, 3);
 	}
 
 	@Override
@@ -49,18 +49,12 @@ public class ItemElementalPistol extends ElementsMysticAlchemy.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack itemstack) {
-			return 0;
+			return 50;
 		}
 
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
-			return 1F;
-		}
-
-		@Override
-		@SideOnly(Side.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
+			return 2F;
 		}
 	}
 }
