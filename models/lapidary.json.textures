@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ronlock",
+        "1": "and",
+        "2": "oldlock",
+        "3": "oallock",
+        "4": "tone",
+        "5": "irt",
+        "6": "inkool",
+        "missing": "ronlock"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -16,6 +16,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Lapidary",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -23,7 +31,8 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabmysticalchemy": "Mystic Alchemy",
-      "item.elementalpistol.name": "Elemental Pistol"
+      "item.elementalpistol.name": "Elemental Pistol",
+      "tile.lapidary.name": "Lapidary"
     }
   },
   "workspaceSettings": {
