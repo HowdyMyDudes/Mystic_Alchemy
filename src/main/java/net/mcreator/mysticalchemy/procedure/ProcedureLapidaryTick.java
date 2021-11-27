@@ -54,7 +54,7 @@ public class ProcedureLapidaryTick extends ElementsMysticAlchemy.ModElement {
 					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.DIAMOND_ORE, (int) (1)).getItem())
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.IRON_ORE, (int) (1)).getItem())
 				&& ((((new Object() {
 					public ItemStack getItemStack(BlockPos pos, int sltid) {
 						TileEntity inv = world.getTileEntity(pos);
@@ -62,8 +62,8 @@ public class ProcedureLapidaryTick extends ElementsMysticAlchemy.ModElement {
 							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.DIAMOND, (int) (1)).getItem())
-						&& ((new Object() {
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(Blocks.STONE_BUTTON, (int) (1))
+						.getItem()) && ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {

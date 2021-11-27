@@ -24,6 +24,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
+import net.mcreator.mysticalchemy.procedure.ProcedureLapidaryTick;
 import net.mcreator.mysticalchemy.MysticAlchemy;
 import net.mcreator.mysticalchemy.ElementsMysticAlchemy;
 
@@ -290,6 +291,7 @@ public class GuiLapidaryGUI extends ElementsMysticAlchemy.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 52, this.guiTop + 56, 72, 20, "Refine Crystal"));
 		}
 
 		@Override
@@ -404,6 +406,16 @@ public class GuiLapidaryGUI extends ElementsMysticAlchemy.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureLapidaryTick.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(EntityPlayer entity, int slotID, int changeType, int meta, int x, int y, int z) {
