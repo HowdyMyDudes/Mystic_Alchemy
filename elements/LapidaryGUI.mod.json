@@ -1,0 +1,59 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Lapidary",
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "name": "Lapidary",
+          "x": 260,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Refining:<ENBT:integer:timeRemaining>%",
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "name": "Refining:<ENBT:integer:timeRemaining>%",
+          "x": 459,
+          "y": 83
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 336,
+          "y": 132
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "name": "Slot #1",
+          "x": 480,
+          "y": 132
+        }
+      }
+    ]
+  }
+}

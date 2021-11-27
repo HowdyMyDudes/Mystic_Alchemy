@@ -34,6 +34,8 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.mcreator.mysticalchemy.gui.GuiLapidaryGUI;
+
 import java.util.function.Supplier;
 import java.util.Random;
 import java.util.Map;
@@ -124,11 +126,15 @@ public class ElementsMysticAlchemy implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiLapidaryGUI.GUIID)
+				return new GuiLapidaryGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiLapidaryGUI.GUIID)
+				return new GuiLapidaryGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}
