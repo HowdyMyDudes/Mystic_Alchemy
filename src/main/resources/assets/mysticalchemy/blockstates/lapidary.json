@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "mysticalchemy:lapidary"
+    },
+    "facing=north": {
+      "model": "mysticalchemy:lapidary"
+    },
+    "facing=east": {
+      "model": "mysticalchemy:lapidary",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mysticalchemy:lapidary",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mysticalchemy:lapidary",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lass",
+        "1": "oldlock",
+        "2": "eather",
+        "3": "oallock",
+        "4": "opperlock",
+        "5": "tone"
+      },
+      "name": "default"
+    }
+  }
+}

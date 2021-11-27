@@ -1,0 +1,15 @@
+{
+  "parent": "mysticalchemy:custom/lapidary",
+  "textures": {
+    "all": "mysticalchemy:blocks/lapidary",
+    "particle": "mysticalchemy:blocks/lapidary",
+    "0": "mysticalchemy:blocks/ronlock",
+    "1": "mysticalchemy:blocks/and",
+    "2": "mysticalchemy:blocks/oldlock",
+    "3": "mysticalchemy:blocks/oallock",
+    "4": "mysticalchemy:blocks/tone",
+    "5": "mysticalchemy:blocks/irt",
+    "6": "mysticalchemy:blocks/inkool",
+    "missing": "mysticalchemy:blocks/ronlock"
+  }
+}
